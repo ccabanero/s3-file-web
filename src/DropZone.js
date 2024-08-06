@@ -64,7 +64,9 @@ function MyDropzone() {
   return (
     <div {...getRootProps()}>
       <input {...getInputProps()} />
-      <p>Drag 'n' drop some files here, or click to select files</p>
+      <div style={{ }}>
+        Drag Stuff
+      </div>
     </div>
   )
 }

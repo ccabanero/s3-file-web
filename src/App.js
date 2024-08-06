@@ -10,7 +10,22 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
       </div>
-      <div style={{ backgroundColor: 'red', margin: 0, padding: 0, position: 'absolute', top: '68%', left: '45%', width: 100, height: 100 }}>
+      <div style={{ 
+          backgroundColor: '#f2f2f2',
+          margin: 0,
+          padding: 0,
+          position: 'absolute',
+          top: '68%',
+          /* center left */
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          left: 0,
+          right: 0,
+          width: 200,
+          height: 100,
+          /* make rounded corneres */
+          borderRadius: 4,
+        }}>
         <DropZone />
       </div>
     </div>
