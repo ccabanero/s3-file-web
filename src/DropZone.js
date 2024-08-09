@@ -16,7 +16,10 @@ function MyDropzone() {
 
       reader.onload = () => {
         // fetch s3 pre-signed URL from micro-service
-        const url = 'https://nlze0aet9h.execute-api.us-west-2.amazonaws.com/dev/api/presigned-upload-url';
+        //
+        console.log('file');
+        console.log(file.name);
+        const url = `https://cateoi4c1g.execute-api.us-west-2.amazonaws.com/Prod/get-presigned-url?s3Key=${file.name}`;
         axios.get(url)
           .then(function (response) {
             // send data to s3

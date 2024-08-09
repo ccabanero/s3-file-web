@@ -10,6 +10,15 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
       </div>
+      <div style={{
+        position: 'absolute',
+        top: '30%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        color: 'white',
+      }}>
+        Pretend this is Stan's Template form
+      </div>
       <div style={{ 
           backgroundColor: '#f2f2f2',
           margin: 0,
@@ -23,7 +32,6 @@ function App() {
           right: 0,
           width: 200,
           height: 100,
-          /* make rounded corneres */
           borderRadius: 4,
         }}>
         <DropZone />
